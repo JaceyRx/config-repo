@@ -8,5 +8,5 @@ zuul:
 #     简洁写法
 #    product: /myProduct/**
   ignored-patterns:   # 过滤某些API不供外部访问
-#     - /**/product/listForOrder
-#     - /**/product/decreaseStock
+    - /**/product/listForOrder
+    - /**/product/decreaseStock
