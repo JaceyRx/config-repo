@@ -10,3 +10,7 @@ zuul:
   ignored-patterns:   # 过滤某些API不供外部访问
     - /**/product/listForOrder
     - /**/product/decreaseStock
+    
+girl:
+  name: product
+  age: 203
