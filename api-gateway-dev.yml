@@ -12,5 +12,5 @@ zuul:
     - /**/product/decreaseStock
     
 girl:
-  name: product
+  name: api-gateway
   age: 203
