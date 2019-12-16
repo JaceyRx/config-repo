@@ -1,15 +1,15 @@
 zuul:
   routes:
 #     /myProduct/product/list  ->  /product/product/list
-    bbbb:
-      path: /myProduct/**  # 路由前缀
-      serviceId: product   # 服务注册名
-      sensitiveHeaders:    # zuul 默认是不会传递cookie的，需要把这个配置制空，其才能传递cookie
+#     bbbb:
+#       path: /myProduct/**  # 路由前缀
+#       serviceId: product   # 服务注册名
+#       sensitiveHeaders:    # zuul 默认是不会传递cookie的，需要把这个配置制空，其才能传递cookie
 #     简洁写法
-#    product: /myProduct/**
-  ignored-patterns:   # 过滤某些API不供外部访问
-#     - /**/product/listForOrder
-#     - /**/product/decreaseStock
+    product: /myProduct/**
+#   ignored-patterns:   # 过滤某些API不供外部访问
+#      - /**/product/listForOrder
+#      - /**/product/decreaseStock
     
 girl:
   name: api-gateway
