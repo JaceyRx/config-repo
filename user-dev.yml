@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost/springcloud_sell?characterEncoding=utf-8&useSSL=false
+  redis:
+    host: 192.168.2.80
+    port: 6379
+  rabbitmq:          # 配置rabbitMQ
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+server:
+  port: 8082
+
+girl:
+  name: jacey
+  age: 18
