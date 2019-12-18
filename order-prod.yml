@@ -1,0 +1,25 @@
+# 改用远程配置中心配置
+spring:
+  application:
+    name: order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.2.121/springcloud_sell?characterEncoding=utf-8&useSSL=false
+  rabbitmq:          # 配置rabbitMQ
+    host: 192.168.2.121
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8761/eureka/
+server:
+  port: 8080
+
+girl:
+  name: order 
+  age: 101
