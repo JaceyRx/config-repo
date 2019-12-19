@@ -17,6 +17,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka1:8761/eureka/,http://eureka2:8761/eureka/
+  instance:
+    prefer-ip-address: true
 server:
   port: 8080
 
