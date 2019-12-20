@@ -16,3 +16,6 @@ zuul:
 girl:
   name: api-gateway
   age: 305
+
+server:
+  port: 7070
